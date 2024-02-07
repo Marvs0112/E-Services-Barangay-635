@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+@import url("https://fonts.google.com/specimen/Racing+Sans+One?query=Racing+");
+
+
+:root{
+    --main-color: #d3ad7f;
+    --black: #00000a;
+    --bg: #000007;
+    --border:.1rem solid rgba(121, 114, 114, 0.3);
+    --gray: #4743433b;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear; 
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    
+}
+
+html::-webkit-scrollbar{
+    width: .9rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5px;
+}
+html::-webkit-scrollbar-thumb:hover {
+    background: black; 
+}
+
+body{
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size: cover; 
+    background-position: center;
+}
+
+section{
+    padding: 2rem 7%;
+}
+    
+.header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10;
+}
+
+.header .logo img{
+    height: 20rem;
+}
+
+.header .navbar a{
+    margin: 0 7rem;
+    font-weight: bold;
+    font-size: 3rem;  
+    color: #fff;
+}
+
+.header .navbar a:hover { 
+    color:rgb(65, 1, 1);
+    border-bottom: 0.1rem solid white;
+    padding-bottom: 0.5rem;
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 4rem;
+    margin-left: 15rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+#menu-btn{
+    display:none;
+}
+
+
+
+.home {
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.home .content h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10rem;
+    text-transform: uppercase;
+    color:#fff400;
+}
+
+.home .content h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home .content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.4;
+    padding:1rem 0;
+    color:white;
+}
+
+svg {
+    padding-top: 16rem;
+	width: 550vh; height: 500px;
+}
+svg text {
+    font-family: 'Racing Sans One', serif;
+    font-style: italic;
+    font-weight: bold;
+	animation: stroke 5s infinite alternate;
+	font-size: 200px;
+}
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(211,173,127,0); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 3;
+	}
+	70%  {fill: rgba(211,173,127,0); stroke: rgb(255, 255, 255); }
+	80%  {fill: rgba(211,173,127,0); stroke: rgb(255, 136, 0); stroke-width: 3; }
+	100% {
+		fill: rgb(255, 238, 0); stroke: rgba(211,173,127,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.heading2 {
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2.6rem;
+}
+.heading3 {
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+}
+
+.about2 .row {
+    height: 670px;
+    background: rgba(0, 0, 0, 0.504);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the element horizontally */
+}
+
+
+.about2 .row .image img{ 
+    max-width: 100%; 
+    max-height: 900px; 
+    padding-top: 7.2rem;
+}
+
+.about2 .row .context{
+    flex:2 1 20rem;
+    padding: 2rem;
+}
+
+.about2 .row .context p{
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    
+}
+.about2 .row form{
+    flex:1 1 20rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.about2 .row form h1{
+    text-transform: uppercase;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    color: #fff
+}
+
+.about2 .row form a{
+    text-transform: uppercase;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    color: #fff
+}
+
+.about2 .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:rgba(0, 0, 0, 0.504);
+    border: var(--border);
+}
+
+.about2 .row form .inputBox span{
+    color: #fff;
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+
+
+
+.heading4 {
+    text-align: bottom;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 5rem;
+}
+.heading5 {
+    text-align: bottom;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding-bottom: 0.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+}
+.content .row{
+    background:rgba(0, 0, 0, 0.504);
+}
+.content .row .context{
+    flex:2 1 20rem;
+    padding: 5rem;
+    margin: auto; 
+}
+.content .row .context p{
+   
+    text-align: justify;
+    text-align: bottom;
+    color: white;
+    padding-top: 4rem;
+    font-size: 2.5rem;
+}
+.content .row .context a{
+    text-align: justify;
+    text-align: bottom;
+    color: white;
+    padding-top: 4rem;
+    font-size: 2.5rem;
+}
+.contact .row{
+    padding-top: 5rem;
+    display: flex;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact2 form h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #fff
+}
+
+
+
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding:1rem;
+}
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 40%;
+    background-color: black; 
+}
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap: 1rem;
+}
+.footer .links a{
+    padding:.7rem 2rem;
+    color: #fff;
+    border-radius: 10%;
+    border: var(--border);
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.footer .links a:hover{
+    background: var(--main-color);
+}
+
+.footer .credit{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+.footer .credit span{
+    color: var(--main-color);
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+
+
+
+
+
+/* media queries */
+@media (max-width:991px){
+   
+    html{
+        font-size:55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+}
+
+section{
+    padding: 1.5rem 7%;
+}
+
+@media (max-width:768px){
+   
+    #menu-btn{
+        display: inline-block;
+    }
+    
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: rgba(0, 0, 0, 0.504);
+        width: 21rem;
+        height: calc(30vh - 9.5rem)
+    }
+    
+    .header .navbar.active{
+        right:0;
+    }  
+
+    .header .navbar a{
+        color: white;
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size:2rem;
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size:4.5rem;
+    }
+
+    .home .content p{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .header .logo img{
+        height: 15rem;
+    }
+    
+    .nav-link{
+        padding:.5rem 2rem; 
+        left: 45px;
+        font-size:2rem;
+    }
+    svg {
+        font-family: 'Robotos slab', serif;
+        width: 100%;
+        height: 100%;
+    }
+    svg text {
+        font-size: 10vw;
+        animation: stroke 5s infinite alternate;
+        stroke-width: 100vw;
+        text-anchor: middle;
+        dominant-baseline: middle;
+    }
+    .about2 .row{
+        height: 1200px;
+        
+    }
+    .about2 .row .image img{ 
+        display: flex;
+        justify-content: center;
+        max-width: 100%; 
+        max-height: 500px; 
+    }
+    .heading4 {
+        font-size: 2rem;
+    }
+    .heading5 {
+        font-size: 4rem;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width:450px){
+   
+    html{
+        font-size:50%;
+    }
+  
+}
