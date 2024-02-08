@@ -549,7 +549,7 @@ section{
         height: 100%;
     }
     svg text {
-        font-size: 13vw;
+        font-size: 12vw;
         animation: stroke 5s infinite alternate;
         stroke-width: 100vw;
         text-anchor: middle;
