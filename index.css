@@ -353,7 +353,7 @@ svg text {
 }
 
 /* Media query for mobile phones */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .council .box-container {
         grid-template-columns: 1fr;
         grid-gap: 5rem;
@@ -549,7 +549,7 @@ section{
         height: 100%;
     }
     svg text {
-        font-size: 14.5vw;
+        font-size: 13vw;
         animation: stroke 5s infinite alternate;
         stroke-width: 100vw;
         text-anchor: middle;
