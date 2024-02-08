@@ -303,6 +303,7 @@ svg text {
     font-family: 'Poppins', sans-serif;
     font-size: 7rem; 
 }
+/* Default styles for larger screens */
 .council .box-container {
     background: rgba(0, 0, 0, 0.504);
     display: grid;
@@ -351,27 +352,18 @@ svg text {
     text-align: center;
 }
 
-
-@media (max-width: 768px) {
+/* Media query for mobile phones */
+@media screen and (max-width: 767px) {
     .council .box-container {
-        grid-template-columns: repeat(2, 1fr); /* Adjusted to 2 columns for smaller screens */
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+        padding: 2rem;
     }
 
     .council .box-container .box {
-        max-width: 100%; /* Adjusted max-width for smaller screens */
-    }
-
-    .council .box-container .box .user {
-        height: 10rem; /* Adjusted image height for smaller screens */
-        width: 10rem; /* Adjusted image width for smaller screens */
-    }
-
-    .council .box-container .box h3 {
-        font-size: 1.5rem; /* Adjusted font size for smaller screens */
-    }
-
-    .council .box-container .box p {
-        font-size: 1rem; /* Adjusted font size for smaller screens */
+        width: 100%;
+        max-width: none;
+        margin-bottom: 5rem;
     }
 }
 
