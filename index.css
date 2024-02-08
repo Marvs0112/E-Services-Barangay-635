@@ -536,7 +536,7 @@ section{
         font-size:4.5rem;
     }
     .home .content p{
-        font-size: 1.3rem;
+        font-size: 2.5rem;
     }
     .blogs{
         text-align: center;
@@ -549,7 +549,7 @@ section{
         height: 100%;
     }
     svg text {
-        font-size: 8vw;
+        font-size: 14.5vw;
         animation: stroke 5s infinite alternate;
         stroke-width: 100vw;
         text-anchor: middle;
